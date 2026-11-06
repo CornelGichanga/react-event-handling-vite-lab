@@ -1,9 +1,19 @@
 // Code PasswordInput Component Here
 
-function PasswordInput (){
-    return(
-        <></>
-    )
+import React from 'react';
+
+function PasswordInput() {
+  const handleChange = (event) => {
+    console.log("Entering password…");
+  };
+
+  return (
+    <input 
+      type="password" 
+      onChange={handleChange} 
+      placeholder="Enter your password"
+    />
+  );
 }
 
 export default PasswordInput;
